@@ -29,6 +29,23 @@ ul {
   font-family: "Montserrat", sans-serif;
 }
 
+.weblinks {
+  color: #000;
+  text-align: left;
+}
+
+.links a {
+  color: #000;
+  display:block;;
+}
+
+.links li {
+  display: block;
+  padding: 10px;
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
 li {
   display: inline-block;
   padding: 10px;
@@ -74,6 +91,7 @@ header {
 div.column {
   width: 45%;
   margin: 60px 20px 40px 20px;
+  background-color: #FFF;
   box-sizing: border-box;
   display: inline-block;
   float: left;
@@ -85,6 +103,28 @@ div.column {
   width: 100%;
   border: 3px solid #FFF;
   border-radius: 20px;
+}
+
+button {
+  height: 40px;
+  max-width: 180px;
+  padding: 0 15px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  color: #FFF;
+  outline: none;
+  font-size: 12pt;
+  transition: all 0.5s;
+}
+
+button a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+button:hover {
+  text-transform: uppercase;
 }
 
 .readMore {
@@ -120,6 +160,18 @@ div.column {
   padding-top: 15px;
 }
 
+.larry {
+  background-color: #FFF;
+  text-align: center;
+  height: 45px;
+}
+
+.more-larry {
+  width: 85%;
+  border: solid 2px #9dbdd1;
+  border-radius: 180px;
+}
+
 .fa {
   font-size: 40pt;
 }
@@ -128,8 +180,40 @@ h2 {
   font-size: 22pt;
 }
 
+h3 {
+  font-size: 18pt;
+}
+
 h4 {
   font-size: 16pt;
+}
+
+table {
+  width: 90%;
+  margin: 5px;
+  text-align: center;
+  background-color: #c7e2f3;
+  /*transition: 2s;*/
+}
+
+tr {
+  transition: all 2s;
+}
+
+td {
+  width: 33%;
+  padding: 20px;
+}
+
+td:hover {
+  background-color: #9dbdd1;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.quote {
+  padding: 50px 0px;
+  text-align: center;
 }
 
 .colgroup {
@@ -186,4 +270,19 @@ footer {
 footer p {
   font-size: 9pt;
   padding-top: 30px;;
+}
+
+/*Youtube Video*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
