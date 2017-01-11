@@ -1,0 +1,47 @@
+body {
+  background-image: url("http://cdn.wallpapersafari.com/42/11/NqjoeM.png");
+  background-size: cover;
+  text-align: center;
+  font-family: monospace;
+  color: white;
+  margin: 0;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  margin: 60px auto;
+  padding: 20px;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#map {
+  width: 60%;
+  height: 400px;
+  background-color: none;
+  margin: 60px auto;
+}
+
+button {
+  background-color: hotpink;
+  color: white;
+  border-color: none;
+  border-style: none;
+}
+
+button:hover {
+  background-color: rebeccapurple;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}

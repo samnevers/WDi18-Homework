@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magic 8 Ball</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>Magic 8 Ball</h1>
+      <h3>Infinite wisdom - much wow</h3>
+
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/ask">Ask a Question</a>
+      </nav>
+
+      <hr>
+      <%= yield %>
+      <hr>
+  </body>
+</html>

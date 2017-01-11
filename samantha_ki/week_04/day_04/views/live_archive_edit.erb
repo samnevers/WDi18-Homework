@@ -1,0 +1,30 @@
+<h3>Edit a concert</h3>
+<h5>The more I see the less I know the more I like to let it go</h5>
+
+<form action="/live_archive" method="POST">
+  <p>
+    <label for="">Date:</label>
+    <input type="text" name="date" placeholder="Date [Day Month Year]" value="<%= @live_archive['date']%>">
+  </p>
+  <p>
+    <label for="">Location:</label>
+    <input type="text" name="location" placeholder="Location [City, Country]" value="<%= @live_archive['location']%>">
+  </p>
+  <p>
+    <label for="">Image:</label>
+    <input type="text" name="image" placeholder="Image URL" value="<%= @live_archive['image']%>">
+  </p>
+  <p>
+    <label for="">Set List:</label>
+    <input type="text" name="setlist" placeholder="Set List URL" value="<%= @live_archive['setlist']%>">
+  </p>
+  <p>
+    <label for="">Video:</label>
+    <input type="text" name="video" placeholder="Video URL" value="<%= @live_archive['video']%>">
+  </p>
+  <p>
+    <label for="">Quote:</label>
+    <input type="text" name="quote" placeholder="Quote" value="<%= @live_archive['quote']%>">
+  </p>
+  <input type="submit" value="Update Concert">
+</form>

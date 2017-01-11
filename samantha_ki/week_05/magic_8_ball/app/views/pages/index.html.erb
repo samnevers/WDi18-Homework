@@ -1,0 +1,11 @@
+<h3>All questions asked will display here...</h3>
+
+<ul>
+  <% @questions.each do |q| %>
+    <li>
+      <a href="/questions/<%= question.id %>">
+        <%= q.question %>
+      </a>
+    </li>
+    <% end %>
+  </ul>

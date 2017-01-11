@@ -1,0 +1,15 @@
+<h3>STANDING IN LINE TO SEE THE SHOW TONIGHT</h3>
+
+<p>Blah blah blah, or more to quote Anthony, "ding dang dong ding dong dang".</p>
+
+<% @all_live_archive.each do |live_archive| %>
+  <ul>
+    <li><%= live_archive["id"]%></li>
+    <li><a href="/live_archive/<%= live_archive["id"] %>"> <%= live_archive["date"] %></a></li>
+    <li> <%= live_archive["location"] %></li>
+    <li><%=live_archive["image"]%></li>
+    <li><%=live_archive["setlist"]%></li>
+    <li><%=live_archive["video"]%></li>
+    <li><%=live_archive["quote"]%></li>
+  </ul>
+<% end %>

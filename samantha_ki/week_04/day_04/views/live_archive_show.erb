@@ -1,0 +1,17 @@
+<h3>
+  Standing in line to see the show tonight at <%= @live_archive["location"] %> on <% @live_archive["date"]%>
+</h3>
+
+<p>Date: <%= @live_archive["date"]%> </p>
+<p>Location: <%= @live_archive["location"]%> </p>
+<p>Image: <img src="<%= @live_archive["image"]%>"> </p>
+<p>Set List: <img src="<%= @live_archive["setlist"]%>"> </p>
+<p>Video: <a href="<%= @live_archive["video"]%>">Video</a> </p>
+<p>Quote: <%= @live_archive["quote"]%> </p>
+
+<div class="controls">
+  <a href="/live_archive/<%= @live_archive["id"]%>/delete">
+    Delete this concert</a> |
+  <a href="/live_archive/<%= @live_archive["id"]%>/edit">
+      Edit this concert</a>
+</div>
